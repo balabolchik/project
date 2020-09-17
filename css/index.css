@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+:root {
+    --main-color: #ffffff;
+    --accent-color: black;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: auto;
+}
+
+ /*header*/
+
+header.cap {
+    background-image: url('../img/head.jpg');
+    background-size: 100% 68px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Prata', serif;
+}
+
+.logo h1, p{
+    margin: 0px 0px 0px 17px;
+    font-style: italic;
+    color: var(--main-color);
+}
+
+.logo a{
+    text-decoration: none;
+}
+.logo h1 {
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.cap .autorisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.cap .autorisation a {
+    text-decoration: none;
+    color: var(--main-color);
+    margin: 5px 7.5px 5px 7.5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*Tenet*/
+
+#films .tenet {
+    background-image: url('../img/tenet.jpg');
+}
