@@ -88,3 +88,32 @@ header.cap {
     font-family: 'Prata', serif;
     font-size: 34px;
 }
+
+
+#cite #films .tenet .info .buttons .button-tenet-trailer a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: 'Prata', serif;
+}
+
+
+
+#cite #films .tenet .info .buttons {
+    background-size: 429px 64px;
+    display: flex;
+    flex-direction: row;
+}
+
+#cite #films .tenet .info .buttons .button-tenet-trailer {
+    background-color: rgb(0, 119, 255);
+    width: 204.78px;
+    height: 44px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    margin: 10px;
+    outline: none;
+}
+
+#cite #films .tenet .info .buttons .button-tenet-trailer:hover {
+    border-color: white;
+}
