@@ -16,6 +16,7 @@ body{
 header.cap {
     background-image: url('../img/head.jpg');
     background-size: 100% 68px;
+    max-height: 68px;
     display: flex;
     justify-content: space-between;
 }
@@ -24,11 +25,13 @@ header.cap {
     font-family: 'Akronim', cursive;
     font-size: 32px;
     text-decoration: underline;
+    margin: 0px;
 }
 
 .cap .logo a p {
     font-family: 'Prata', serif;
     font-size: 12px;
+    margin: 0px;
 }
 
 .cap .logo #cap h1{
@@ -45,12 +48,14 @@ header.cap {
 
 .cap .logo a{
     text-decoration: none;
+    color: white;
 }
 
 .cap .logo {
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-left: 17px;
 }
 
 .cap .autorisation {
@@ -374,9 +379,75 @@ header.cap {
 
 .contacts-and-form #contacts-and-form #contacts .map{
     min-width: 100%;
+    margin: 0px auto;
 }
 
 .contacts-and-form #contacts-and-form #contacts .map iframe {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 350px;
+}
+
+/* Form */
+
+.contacts-and-form #contacts-and-form form {
+    margin-top: 30px;
+}
+
+.contacts-and-form #contacts-and-form form label {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+.contacts-and-form #contacts-and-form form label input {
+    height: 44px;
+    width: 100%;
+    background-color: #ffffff3d;
+    border-radius: 10px ;
+}
+.contacts-and-form #contacts-and-form form label input::placeholder {
+    padding: 0px 0px 0px 40px;
+    color: #a7a5a5;
+
+}
+
+.contacts-and-form #contacts-and-form form label .message {
+    height: 150px;
+}
+
+.contacts-and-form #contacts-and-form form label .message::placeholder {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    vertical-align: baseline;
+}
+
+.contacts-and-form #contacts-and-form form .send{
+    width: 100%;
+    height: 44px;
+    margin-top: 40px;
+    border-radius: 7px;
+}
+
+@media (min-width: 768px) {
+    .contacts-and-form #contacts-and-form {
+        display: grid;
+        grid-template-columns: 1fx 1fx;
+        grid-gap: 30px;
+    }
+    .contacts-and-form #contacts-and-form #contacts{
+        grid-column: 1/2;
+    }
+    .contacts-and-form #contacts-and-form form{
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
