@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Open+Sans&family=Prata&display=swap');
+
+:root {
+    --main-color: #ffffff;
+    --accent-color: black;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: auto;
+    max-width: 980px;
+    background-color: gray;
+}
+
+ /*header*/
+
+header.cap {
+    background-image: url('../img/head.jpg');
+    background-size: 100% 68px;
+    max-height: 68px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cap .logo a h1 {
+    font-family: 'Akronim', cursive;
+    font-size: 32px;
+    text-decoration: underline;
+    margin: 0px;
+}
+
+.cap .logo a p {
+    font-family: 'Prata', serif;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.cap .logo #cap h1{
+    margin: 0px 0px 0px 17px;
+    font-style: italic;
+    color: var(--main-color);
+}
+
+.cap .logo #cap p{
+    margin: 0px 0px 0px 17px;
+    font-style: italic;
+    color: var(--main-color);
+}
+
+.cap .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.cap .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 17px;
+}
+
+.cap .autorisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cap .autorisation a {
+    text-decoration: none;
+    color: var(--main-color);
+    margin: 5px 7.5px 5px 7.5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* Trailer */
+
+div iframe {
+    display: block;
+    min-height: 500px;
+    margin: 0px ;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-family: 'Prata', serif;
+    margin-left: 40px;
+}
+
+.trailer {
+    min-height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    text-shadow: 2px 2px 5px black;
+    background-color: white;
+}
+
+p {
+    margin: 16px 15px 0px 15px;
+}
+
+.trailer .info {
+    background-color: white;
+}

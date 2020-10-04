@@ -1,153 +1,214 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kino-life | живе кіно у твоєму місті</title>
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-    <body>
-        <header class="cap">
-            <div class="logo">
-                <a href="#cap">
-                    <h1>Kino-life</h1>
-                    <p>живе кіно у твоєму місті</p>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kino-life | живе кіно у твоєму місті</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="cap">
+        <div class="logo">
+            <a href="#cap">
+                <h1>Kino-life</h1>
+                <p>живе кіно у твоєму місті</p>
+            </a>
+        </div>
+
+        <div class="autorisation">
+            <a href="#">Вхід</a>
+            <a href="#">Реєстрація</a>
+        </div>
+    </header>
+
+    <article id="cite">
+        <section id="films">
+            <div id="carousel-films" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-films" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-films" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/tenet.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>ТЕНЕТ</h2>
+                            <div class="buttons">
+                                <form class="button-tenet-trailer">
+                                    <input type="button" value="ПЕРЕГЛЯНУТИ ТРЕЙЛЕР" onClick='location.href="tenet_trailer.html"'>
+                                </form> 
+                                <form class="button-tenet-tickets">
+                                    <input type="button" value="ЗАМОВИТИ КВИТКИ" onClick='location.href="tenet_tickets.html"'>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/troli_two.jpg" class="d-block w-100" alt="ТРОЛІ 2: СВІТОВЕ ТУРНЕ">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>ТРОЛІ 2: СВІТОВЕ ТУРНЕ</h2>
+                            <div class="buttons">
+                                <form class="button-troli-two-trailer">
+                                    <input type="button" value="ПЕРЕГЛЯНУТИ ТРЕЙЛЕР" onClick='location.href="troli_two_trailer.html"'>
+                                </form> 
+                                <form class="button-troli-two-tickets">
+                                    <input type="button" value="ЗАМОВИТИ КВИТКИ" onClick='location.href="troli_two_tickets.html"'>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-films" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-films" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
                 </a>
             </div>
+        </section>
 
-            <div class="autorisation">
-                <a href="#">Вхід</a>
-                <a href="#">Реєстрація</a>
-            </div>
-        </header>
-
-        <article id="cite">
-            <section id="films">
-                <div class="tenet">
-                    <div class="info">
-                        <h2>ТЕНЕТ</h2>
-                        <div class="buttons">
-                            <button class="button-tenet-trailer">
-                                ПОДИВИТИСЯ ТРЕЙЛЕР
-                            </button>
-                            <button class="button-tenet-tickets">
-                                ЗАМОВИТИ КВИТКИ
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="troli-two">
-                    <div class="info">
-                        <h2>ТРОЛІ 2: СВІТОВЕ ТУРНЕ</h2>
-                        <div class="buttons">
-                            <button class="button-troli-two-trailer">
-                                ПОДИВИТИСЯ ТРЕЙЛЕР
-                            </button>
-                            <button class="button-troli-two-tickets">
-                                ЗАМОВИТИ КВИТКИ
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="cinemas">
+        <section class="cinemas">
+            <div>
+                <h2>Наші кінотеатри:</h2>
                 <div>
-                    <h2>Наші кінотеатри:</h2>
-                    <div id="carousel">
-                        <img src="img/beds.jpg" alt="Крісла-лежаки в кінотеатрі">
-                        <img src="img/clients.jpg" alt="Задоволені клієнти">
-                        <img src="img/pair.jpg" alt="Задоволені клієнти">
-                        <img src="img/planetarium.jpg" alt="Планетарій">
-                        <img src="img/screen.jpg" alt="Екран">
+                    <div id="carousel-cinemas" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-cinemas" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-cinemas" data-slide-to="1"></li>
+                            <li data-target="#carousel-cinemas" data-slide-to="2"></li>
+                            <li data-target="#carousel-cinemas" data-slide-to="3"></li>
+                            <li data-target="#carousel-cinemas" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/beds.jpg" class="d-block w-100" alt="Крісла-лежаки в кінотеатрі">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/clients.jpg" class="d-block w-100" alt="Задоволені клієнти">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/pair.jpg" class="d-block w-100" alt="Задоволені клієнти">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/planetarium.jpg" class="d-block w-100" alt="Планетарій">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/screen.jpg" class="d-block w-100" alt="Екран">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-cinemas" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-cinemas" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
-            </section>
-            
-            <section class="shop">
-                <div class="title">
-                    <h2>Для приємного перегляду фільмів:</h2>
-                    <p>(оплата у кінотеатрі)</p>
-                </div>
-                <div class="menu">
-                    <div id="small_popcorn">
-                        <img src="img/small_popcorn.jpg" alt="Малий попкорн">
-                        <br>
-                        <h3>Попкорн малий солоний/сирний/карамельний</h3>
-                        <p>45 грн.</p>
-                    </div>
-                    
-                    <div id="medium_popcorn">
-                        <img src="img/medium_popcorn.jpg" alt="Середній попкорн">
-                        <br>
-                        <h3>Попкорн середній солоний/сирний/карамельний</h3>
-                        <p>65 грн.</p>
-                    </div>
-                    
-                    <div id="big_popcorn">
-                        <img src="img/big_popcorn.jpg" alt="Великий попкорн">
-                        <br>
-                        <h3>Попкорн великий солоний/сирний/карамельний</h3>
-                        <p>85 грн.</p>
-                    </div>
-                    
-                    <div id="drinks">
-                        <img src="img/drinks.jpg" alt="Напої">
-                        <br>
-                        <h3>Coca-cola/Fanta/ Sprite 0,5л</h3>
-                        <p>25 грн.</p>
-                    </div>
-                    
-                    <div id="popcorn_and_pepsi">
-                        <img src="img/popcorn_and_pepsi.jpg" alt="Попкорн і Pepsi">
-                        <br>
-                        <h3>Акція: поп корн середній + Coca-cola 0,5л.</h3>
-                        <p>80 грн.</p>
-                    </div>
-                    
-                    <div id="popcorn_and_two_pepsi">
-                        <img src="img/popcorn_and_two_pepsi.png" alt="Попкорн і дві Pepsi">
-                        <br>
-                        <h3>Акція: Попкорн великий + 2 Coca-cola 0,5л</h3>
-                        <p>115 грн.</p>
-                    </div>
-                </div>
-            </section>
-        </article>
-        <div class="contacts-and-form">
-            <div id="contacts-and-form">
-                <div id="contacts">
-                    <h2>Contacts</h2>
-                    <h3>Address:</h3>
-                    <p>вулиця Стрийська, 30, с, Сокільники, Львівська область, 81130</p>
-                    <h3>E-mail:</h3>
-                    <p>King_kross@example.com</p>
-                    <h3>Phone</h3>
-                    <p>+38 (098) 76-54-321</p>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.6480703578754!2d24.00869451512586!3d49.77387664376408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7c509927103%3A0x4452efa99a93643f!2z0KLQoNCmIEtpbmcgQ3Jvc3MgTGVvcG9saXM!5e0!3m2!1suk!2sua!4v1601578649096!5m2!1suk!2sua"></iframe> 
-                    </div>
-                </div>
-                <form action="https://formspree.io/xdowqrdr" method="POST">
-                    <label>Name:
-                        <input type="text" placeholder="Name*" required name="user name">
-                    </label>
-                    <br>
-                    <label>Phone number:
-                        <input type="tel" placeholder="Phone number*" required name="phone number">
-                    </label>
-                    <br>
-                    <label>E-mail:
-                        <input type="email" placeholder="E-mail*" required name="email">
-                    </label>
-                    <br>
-                    <label>Your message:
-                        <input class="message" type="text" placeholder="Type your message" required name="message">
-                    </label>
-                    <button class="send">SEND</button>
-                </form>
             </div>
+        </section>
+
+        <section class="shop">
+            <div class="title">
+                <h2>Для приємного перегляду фільмів:</h2>
+                <p>(оплата у кінотеатрі)</p>
+            </div>
+            <div class="menu">
+                <div id="small_popcorn">
+                    <img src="img/small_popcorn.jpg" alt="Малий попкорн">
+                    <br>
+                    <h3>Попкорн малий солоний/сирний/карамельний</h3>
+                    <p>45 грн.</p>
+                </div>
+
+                <div id="medium_popcorn">
+                    <img src="img/medium_popcorn.jpg" alt="Середній попкорн">
+                    <br>
+                    <h3>Попкорн середній солоний/сирний/карамельний</h3>
+                    <p>65 грн.</p>
+                </div>
+
+                <div id="big_popcorn">
+                    <img src="img/big_popcorn.jpg" alt="Великий попкорн">
+                    <br>
+                    <h3>Попкорн великий солоний/сирний/карамельний</h3>
+                    <p>85 грн.</p>
+                </div>
+
+                <div id="drinks">
+                    <img src="img/drinks.jpg" alt="Напої">
+                    <br>
+                    <h3>Coca-cola/Fanta/ Sprite 0,5л</h3>
+                    <p>25 грн.</p>
+                </div>
+
+                <div id="popcorn_and_pepsi">
+                    <img src="img/popcorn_and_pepsi.jpg" alt="Попкорн і Pepsi">
+                    <br>
+                    <h3>Акція: поп корн середній + Coca-cola 0,5л.</h3>
+                    <p>80 грн.</p>
+                </div>
+
+                <div id="popcorn_and_two_pepsi">
+                    <img src="img/popcorn_and_two_pepsi.png" alt="Попкорн і дві Pepsi">
+                    <br>
+                    <h3>Акція: Попкорн великий + 2 Coca-cola 0,5л</h3>
+                    <p>115 грн.</p>
+                </div>
+            </div>
+        </section>
+    </article>
+    <div class="contacts-and-form">
+        <div id="contacts-and-form">
+            <div id="contacts">
+                <h2>Contacts</h2>
+                <h3>Address:</h3>
+                <p>вулиця Стрийська, 30, с, Сокільники, Львівська область, 81130</p>
+                <h3>E-mail:</h3>
+                <p>King_kross@example.com</p>
+                <h3>Phone</h3>
+                <p>+38 (098) 76-54-321</p>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.6480703578754!2d24.00869451512586!3d49.77387664376408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7c509927103%3A0x4452efa99a93643f!2z0KLQoNCmIEtpbmcgQ3Jvc3MgTGVvcG9saXM!5e0!3m2!1suk!2sua!4v1601578649096!5m2!1suk!2sua"></iframe>
+                </div>
+            </div>
+            <form action="https://formspree.io/xdowqrdr" method="POST">
+                <label>Name:
+                    <input type="text" placeholder="Name*" required name="user name">
+                </label>
+                <br>
+                <label>Phone number:
+                    <input type="tel" placeholder="Phone number*" required name="phone number">
+                </label>
+                <br>
+                <label>E-mail:
+                    <input type="email" placeholder="E-mail*" required name="email">
+                </label>
+                <br>
+                <label>Your message:
+                    <input class="message" type="text" placeholder="Your message" required name="message">
+                </label>
+                <button class="send">SEND</button>
+            </form>
         </div>
-    </body>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
