@@ -17,8 +17,5 @@ container.addEventListener('click', e => {
 });
 
 button.addEventListener('click', () => {
-    document.querySelectorAll('.selected').classList.remove('selected');
-    console.log(document.querySelectorAll('.selected'));//.classList.remove('selected').classList.add('occupied');
-    console.log(i);
     document.getElementById('total').innerHTML = 0;
 });
