@@ -110,7 +110,7 @@ header.cap {
     flex-direction: row;
     display: grid;
     grid-template-columns: 8% repeat(20, 1fr) 5px;
-    grid-gap: 4px;
+    grid-gap: 2px;
 }
 
 #holl .holl .rows .seat {
@@ -137,8 +137,14 @@ header.cap {
     color: grey;
 }
 
-#holl .holl .rows .seat:focus{
+#holl .holl .rows .seat.selected{
     background-color: yellow;
+    color: black;
+}
+
+#holl .holl .rows .seat.occupied {
+    color: black;
+    background-color: red;
 }
 
 #holl .pay {
@@ -170,4 +176,8 @@ header.cap {
 #holl .pay a:hover {
     background-color: black;
     transition: all 0.7s;
+}
+
+#holl h3 {
+    text-align: center;
 }

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Kino-life | Купити квитки "Тенет"</title>
         <link rel="stylesheet" href="css/tickets.css">
+        <link rel="shortuct icon" href="img/icon.jpg">
     </head>
     <body>
         <header class="cap">
@@ -291,7 +292,7 @@
                         <div class="seat">11</div>
                         <div class="seat">12</div>
                         <div class="seat">13</div>
-                        <div class="seat">14</div>
+                        <div class="seat occupied">14</div>
                         <div class="seat">15</div>
                         <div class="seat">16</div>
                         <div class="seat">17</div>
@@ -301,10 +302,12 @@
                     </div>
                 </div>
             </div>
+            <h3 id="80" class="price">Вартість одного квитка: 80 грн.</h3>
             <div class="pay">
-                <p>Сумма: <spanid="total">0</span> грн.</p>
-                <a href="#">ОПЛАТИТИ</a>
+                <p>Сумма: <span class='total' id="total">0</span> грн.</p>
+                <a class="end" href="#">ОПЛАТИТИ</a>
             </div>
         </div>
+        <script src="js/tickets.js"></script>
     </body>
 </html>
